@@ -5,38 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
   </head>
 
   <body>
+    <header>
+      <section <h1>Dataweek</h1>
+        <h1>Bas & Davey</h1>
+      </section>
+    </header>
 
-    <div id="map_netherlands" style="position:relative; width: 500px; height: 500px;"></div>
+    <main>
+      <section class="container animate__animated">
+        <h2>Je bent aangekomen op <span class='place'></span></h2>
+        <article>
+          <p class='text'></p>
+        </article>
+        <img class='image' />
+        <p class='bron'></p>
+      </section>
+    </main>
 
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <!-- <script src='./map.js'></script> -->
-    <script>
-      var width = 900;
-      var height = 600;
+    <footer>
+      <section class='footer_buttons'>
+        <button class='prev'>Vorige bestemming</button>
+        <button class='next'>Volgende bestemming</button>
+      </section>
+      <section class='footer_dots'>
 
-      var projection = d3.geo.mercator();
-
-      var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-      var path = d3.geo.path()
-        .projection(projection);
-      var g = svg.append("g");
-
-      d3.json("nld.json", function (error, topology) {
-        g.selectAll("path")
-          .data(topojson.object(topology, topology.objects.countries)
-            .geometries)
-          .enter()
-          .append("path")
-          .attr("d", path)
-      });
-    </script>
+      </section>
+    </footer>
+    <script defer src='./data.js'></script>
+    <script defer src='./js/script.js'></script>
   </body>
 
 </html>
