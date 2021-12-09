@@ -7,12 +7,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   width: 100%;
   background-color: #d95353;
   padding: 1em 0;
+  position: fixed;
+  z-index: 1001;
 }
 
 header section {
@@ -23,13 +26,14 @@ header section {
 }
 
 main {
-  padding: 1em;
+  padding: 2em;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 1001;
 }
 
 footer section.footer_buttons {
@@ -50,9 +54,138 @@ footer section.footer_buttons button {
   margin: 2px 2px;
   font-weight: bold;
   border-radius: 4em;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-img {
-  width: 100px;
+button:hover {
+  background-color: #000;
+}
+
+footer section.footer_buttons button:disabled {
+  opacity: 0.75;
+}
+
+img.image {
+  width: 60%;
   height: auto;
+  margin: auto;
+  display: block;
+}
+
+.footer_progress {
+  background-color: #1c1c1c;
+}
+
+.wraper {
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+ul.container {
+  border-top: 2px solid #fff;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.link {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.link:first-child {
+  margin-left: -55px;
+}
+
+.link:last-child {
+  margin-right: -55px;
+}
+
+.link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: -18px;
+  left: 50%;
+  transform: translatex(-50%);
+  border: 2px solid #fff;
+}
+
+.active::after,
+.link:hover::after {
+  background: #000;
+}
+
+p.lead {
+  font-weight: 600;
+  margin: 50px auto;
+  line-height: 1.5;
+}
+
+div.left-half,
+div.right-half {
+  height: 100%;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20em 0;
+  overflow: auto;
+}
+
+.left-half {
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+
+.right-half {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.container-main {
+  display: table;
+  width: 100%;
+}
+
+article h2,
+article p,
+article h5,
+article img {
+  padding: 1em;
+}
+
+.place {
+  color: #d95353;
+}
+
+.safety {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  margin: 2em;
+  border-radius: 1em;
 }
