@@ -12,10 +12,11 @@ const stations = document.querySelectorAll(".link");
 
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
+const modal = document.getElementById("myModal");
+const span = document.querySelector(".close");
+const start = document.querySelector(".start");
 
 let articleNum = 0;
-
-console.log(stations);
 
 const setData = () => {
   if (articleNum === 0) {
@@ -96,6 +97,14 @@ prev.addEventListener("click", () => {
 
   articleNum--;
   setData();
+});
+
+span.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+start.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
 setData();
