@@ -4,7 +4,7 @@ const data = [
     text: "Dit station is de thuisbasis van de Holendrechtse rapformatie ‘Zone 6’. De frontman van Zone 6, Joey AK, zit sinds vorig jaar vast wegens ontvoering en mishandeling. In de tussentijd heeft zijn rechterhand, Bigidagoe, het stokje van hem overgenomen.Toen de mannen van Zone 6 in de in de middag van 26 augustus 2020 naar verluidt zich in Amsterdam Zuid begaven, ontstond er een onverwachte schietpartij. Bij deze schietpartij werd de rapper-en-ondernemer Bigidagoe meerdere malen geraakt en overgebracht naar het ziekenhuis. Diezelfde nacht werden er, niet geheel toevallig in diezelfde straat in Zuid, schoten gelost op het huis van een rivaal: rapper-en-ondernemer ‘Justin van Zuid’.Toen in de nacht erop de moeder van Bigidagoe hier om de hoek in haar woning lag te slapen werd het huis doelwit van een schietoefening. Het huis van de nietsvermoedende moeder werd doorboord met acht kogels en de buurt schrok zich rot. Het is niet duidelijk of de ruzie nu gesetteld is.",
     image_src: "https://cdn.nos.nl/image/2021/03/12/723111/2880x2160a.jpg",
     safety_index: "121",
-    bron: "https://axed.nl/beschoten-woning-amsterdam-zuid-blijkt-van-19-jarige-rapper/",
+    bron: "https://www.rtlnieuws.nl/sites/default/files/content/images/2020/08/27/huismoeder%20rapper%20bigidagoe%20anp.JPG?itok=rzIVgUoV&offsetX=0&offsetY=50&cropWidth=1016&cropHeight=572&width=1024&height=576&impolicy=dynamic",
   },
   {
     place: "Bullewijk",
